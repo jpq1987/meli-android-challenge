@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+project.ext {
+    appcompat = "1.2.0"
+    constraintLayout = "2.0.4"
+    glide = "4.12.0"
+    lifecycle = "2.2.0"
+    loggingInterceptor = "4.9.0"
+    material = "1.2.1"
+    navigation = "2.3.3"
+    retrofit = "2.9.0"
+}
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "ar.com.meliandroidchallenge"
+        minSdkVersion 28
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "androidx.appcompat:appcompat:$project.appcompat"
+    implementation "androidx.constraintlayout:constraintlayout:$project.constraintLayout"
+    implementation "androidx.lifecycle:lifecycle-extensions:$project.lifecycle"
+    implementation "com.google.android.material:material:$project.material"
+    implementation "androidx.navigation:navigation-fragment:$project.navigation"
+    implementation "androidx.navigation:navigation-ui:$project.navigation"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$project.lifecycle"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$project.lifecycle"
+    testImplementation "junit:junit:4.12"
+    androidTestImplementation "androidx.test.ext:junit:1.1.2"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.3.0"
+    implementation "com.squareup.retrofit2:retrofit:$project.retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$project.retrofit"
+    implementation "com.squareup.okhttp3:logging-interceptor:$project.loggingInterceptor"
+    implementation "com.github.bumptech.glide:glide:$project.glide"
+    annotationProcessor "com.github.bumptech.glide:compiler:$project.glide"
+
+}

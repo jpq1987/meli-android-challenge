@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MeLi</string>
+    <string name="mercadolibre_logo">MercadoLibre logo</string>
+
+    <string name="search_hint">Buscar en Mercado Libre</string>
+    <!-- Navigation Drawer -->
+    <string name="navigation_drawer_open">Abrir panel de navegación</string>
+    <string name="navigation_drawer_close">Cerrar panel de navegación</string>
+    <string name="welcome_description">Hola! \n Te damos la bienvenida a Mercado Libre. \n Nos alegra que hayas pensado en nosotros para realizar tus compras!</string>
+    <string name="error_description">¡Uy! Algo salió mal \n No encontramos resultados para tu búsqueda. Por favor, intenta nuevamente o probá con otra palabra.</string>
+
+</resources>

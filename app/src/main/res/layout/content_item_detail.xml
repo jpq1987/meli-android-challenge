@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="64dp"
+    android:background="@color/whiteBackground"
+    tools:context=".view.itemDetail.ItemDetailActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textview_itemdetail_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/proximanova_regular"
+                android:text="TextView"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view_divider_condition"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintBottom_toBottomOf="@+id/textview_itemdetail_condition"
+                app:layout_constraintStart_toEndOf="@+id/textview_itemdetail_condition"
+                app:layout_constraintTop_toTopOf="@+id/textview_itemdetail_condition" />
+
+            <TextView
+                android:id="@+id/textview_itemdetail_totalsales"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/proximanova_regular"
+                android:text="TextView"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view_divider_condition"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textview_itemdetail_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/proximanova_regular"
+                android:lineHeight="22sp"
+                android:text="TextView"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_itemdetail_condition" />
+
+            <ImageView
+                android:id="@+id/imageview_itemdetail_thumbnail"
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_itemdetail_title"
+                app:srcCompat="@mipmap/empty_box" />
+
+            <TextView
+                android:id="@+id/textview_itemdetail_originalprice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/proximanova_regular"
+                android:text="TextView"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageview_itemdetail_thumbnail" />
+
+            <TextView
+                android:id="@+id/textview_itemdetail_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/proximanova_light"
+                android:text="TextView"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="36sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_itemdetail_originalprice" />
+
+            <TextView
+                android:id="@+id/textview_itemdetail_discountpercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/proximanova_regular"
+                android:text="TextView"
+                android:textColor="@color/green"
+                android:textSize="18sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/textview_itemdetail_price"
+                app:layout_constraintStart_toEndOf="@+id/textview_itemdetail_price"
+                app:layout_constraintTop_toTopOf="@+id/textview_itemdetail_price" />
+
+            <TextView
+                android:id="@+id/textview_itemdetail_installments"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/proximanova_regular"
+                android:text="TextView"
+                android:textColor="@color/green"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_itemdetail_price" />
+
+            <TextView
+                android:id="@+id/textview_itemdetail_paymentmethods"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:fontFamily="@font/proximanova_regular"
+                android:onClick="onClick"
+                android:text="Ver los medios de pago"
+                android:textColor="@color/blue"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_itemdetail_installments" />
+
+            <ImageView
+                android:id="@+id/imageview_itemdetail_shippingmode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_itemdetail_paymentmethods"
+                app:srcCompat="@drawable/ic_shipping"
+                app:tint="@color/green" />
+
+            <TextView
+                android:id="@+id/textview_itemdetail_shippingmode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/proximanova_regular"
+                android:lineHeight="20sp"
+                android:text="Envío gratis"
+                android:textColor="@color/green"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageview_itemdetail_shippingmode"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageview_itemdetail_shippingmode"
+                app:layout_constraintTop_toTopOf="@+id/imageview_itemdetail_shippingmode" />
+
+            <TextView
+                android:id="@+id/textview_itemdetail_shippingcosts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:fontFamily="@font/proximanova_regular"
+                android:onClick="onClick"
+                android:text="Ver costos de envío"
+                android:textColor="@color/blue"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageview_itemdetail_shippingmode"
+                app:layout_constraintStart_toStartOf="@+id/textview_itemdetail_shippingmode"
+                app:layout_constraintTop_toBottomOf="@+id/textview_itemdetail_shippingmode" />
+
+            <ImageView
+                android:id="@+id/imageview_itemdetail_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_itemdetail_shippingcosts"
+                app:srcCompat="@drawable/ic_store"
+                app:tint="@color/green" />
+
+            <TextView
+                android:id="@+id/textview_itemdetail_delivery"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/proximanova_regular"
+                android:lineHeight="20sp"
+                android:maxLines="2"
+                android:text="Retiro gratis en correos y otros puntos"
+                android:textColor="@color/green"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageview_itemdetail_delivery"
+                app:layout_constraintTop_toTopOf="@+id/imageview_itemdetail_delivery" />
+
+            <TextView
+                android:id="@+id/textview_itemdetail_deliverymap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:fontFamily="@font/proximanova_regular"
+                android:onClick="onClick"
+                android:text="Ver en el mapa"
+                android:textColor="@color/blue"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textview_itemdetail_delivery"
+                app:layout_constraintTop_toBottomOf="@+id/textview_itemdetail_delivery" />
+
+            <TextView
+                android:id="@+id/textview_itemdetail_seller_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:fontFamily="@font/proximanova_regular"
+                android:lineHeight="18sp"
+                android:onClick="onClick"
+                android:text="Tienda oficial Mercado Libre Electrónica"
+                android:textColor="@color/blue"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_itemdetail_deliverymap" />
+
+            <TextView
+                android:id="@+id/textview_itemdetail_seller_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/proximanova_regular"
+                android:lineHeight="18sp"
+                android:text="La Plata, Buenos Aires"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_itemdetail_seller_name" />
+
+            <TextView
+                android:id="@+id/textview_itemdetail_seller_totalsales"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/proximanova_regular"
+                android:text="95.987 ventas"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_itemdetail_seller_address" />
+
+            <Button
+                android:id="@+id/button_itemdetail_buy"
+                style="@android:style/Widget.Material.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/proximanova_regular"
+                android:onClick="onClick"
+                android:text="Comprar ahora"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_itemdetail_seller_totalsales" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

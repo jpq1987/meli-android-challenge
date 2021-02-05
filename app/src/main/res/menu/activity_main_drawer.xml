@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_home"
+            android:icon="@drawable/ic_home"
+            android:title="Inicio"
+            android:checked="true" />
+        <item
+            android:id="@+id/item_search"
+            android:icon="@drawable/ic_search"
+            android:title="Buscar"
+            android:checked="false" />
+        <item
+            android:id="@+id/item_notifications"
+            android:icon="@drawable/ic_notifications"
+            android:title="Notificaciones"
+            android:checked="false" />
+        <item
+            android:id="@+id/item_purchases"
+            android:icon="@drawable/ic_purchases"
+            android:title="Mis compras"
+            android:checked="true" />
+        <item
+            android:id="@+id/item_favorites"
+            android:icon="@drawable/ic_favorites"
+            android:title="Favoritos"
+            android:checked="false" />
+        <item
+            android:id="@+id/item_account"
+            android:icon="@drawable/ic_account"
+            android:title="Mi cuenta"
+            android:checked="false" />
+        <item
+            android:id="@+id/item_credit"
+            android:icon="@drawable/ic_credit_card"
+            android:title="Mercado Crédito"
+            android:checked="true" />
+        <item
+            android:id="@+id/item_subscriptions"
+            android:icon="@drawable/ic_subscriptions"
+            android:title="Suscripciones"
+            android:checked="false" />
+        <item
+            android:id="@+id/item_offers"
+            android:icon="@drawable/ic_offers"
+            android:title="Ofertas"
+            android:checked="false" />
+        <item
+            android:id="@+id/item_sell"
+            android:icon="@drawable/ic_store"
+            android:title="Vender"
+            android:checked="false" />
+        <item
+            android:id="@+id/item_history"
+            android:icon="@drawable/ic_history"
+            android:title="Historial"
+            android:checked="false" />
+    </group>
+</menu>
